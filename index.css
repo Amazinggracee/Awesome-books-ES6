@@ -1,0 +1,246 @@
+* {
+  font-family: 'Patrick Hand', cursive;
+}
+
+.display__books__header {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+.header {
+  width: 100%;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+}
+
+.main {
+  height: 80vh;
+}
+
+.logo {
+  display: inline-block;
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  min-width: 75vw;
+  justify-content: center;
+  height: 70vh;
+  font-size: 25px;
+}
+
+.user-input {
+  display: flex;
+  gap: 10px;
+}
+
+.show-added-books {
+  display: block;
+  width: 80%;
+  border: 2px solid black;
+}
+
+.show-added-books > .user-input {
+  padding: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.show-added-books:nth-child(even) {
+  background-color: #dcd7d7;
+}
+
+.user-input:nth-child(odd) {
+  background-color: #fff;
+}
+
+.input-value {
+  margin: 0;
+}
+
+.form {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+  align-items: center;
+
+  /* margin-top: 60px; */
+}
+
+.form-control > input {
+  width: 30vw;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  outline: none;
+}
+
+#title {
+  border: 2px solid black;
+}
+
+#author {
+  border: 2px solid black;
+}
+
+.input-div {
+  display: flex;
+  gap: 10px;
+  width: 90%;
+}
+
+.detele-btn-div {
+  justify-self: flex-end;
+}
+
+.delete-btn {
+  outline: none;
+  border: 2px solid black;
+  box-shadow: 3px 3px black;
+}
+
+#submit-form {
+  border: 2px solid black;
+  box-shadow: 3px 3px black;
+  outline: none;
+}
+
+.submit-div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+form > hr {
+  width: 50%;
+  height: 70%;
+  background-color: #333;
+  border: none;
+}
+
+.error-message-div {
+  background-color: rgba(255, 0, 0, 0.642);
+  display: none;
+  width: 30vh;
+  margin-top: 10px;
+  border-radius: 20px;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-delay: 1s;
+}
+
+.success-message-div {
+  background-color: rgba(0, 255, 13, 0.642);
+  display: none;
+  width: 30vh;
+  margin-top: 10px;
+  border-radius: 20px;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-delay: 1s;
+}
+
+.error-message {
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.success-message {
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.navbar-btns {
+  background-color: #fff;
+  border: none;
+  font-size: 20px;
+}
+
+#add-new-btn {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.time-and-date {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.footer {
+  height: 3vh;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 4rem;
+  height: 10vh;
+  margin: 0;
+}
+
+form > h3 {
+  font-size: 2rem;
+}
+
+.display__books {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-info {
+    font-size: 17px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+    width: 80%;
+
+    /* justify-content: center; */
+    align-items: center;
+    height: 10vh;
+    flex-direction: column;
+  }
+
+  .time-and-date {
+    margin-top: 50px;
+    justify-content: center;
+  }
+}

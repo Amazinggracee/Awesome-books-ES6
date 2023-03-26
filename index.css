@@ -1,8 +1,18 @@
 /* some code */
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
+}
+
+:root {
+  --bg-white: #f2f2f2;
+  --lightgrey: #ddd;
+  --medium-grey: #acb7c3;
+  --border: #000;
+  --font-color: #fff;
+  --error: rgb(250, 1, 1);
+  --grey: rgb(128, 128, 128);
 }
 
 body {
@@ -15,8 +25,8 @@ h1 {
 }
 
 nav {
-  box-shadow: #000 0 0 10px;
-  border: #000 solid 2px;
+  box-shadow: var(--border) 0 0 10px;
+  border: var(--border) solid 2px;
   display: flex;
   justify-content: space-between;
 }
@@ -36,13 +46,13 @@ nav > ul {
 nav > ul > li {
   cursor: pointer;
   padding: 20px;
-  border-right: #000 solid 1px;
+  border-right: var(--border) solid 1px;
 }
 
 nav > h1 {
   cursor: pointer;
   font-size: 30px;
-  color: #000;
+  color: var(--border);
   min-width: 30%;
 }
 
@@ -59,28 +69,28 @@ table {
 
 td,
 th {
-  border: 1px solid #ddd;
+  border: 1px solid var(--lightgrey);
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: var(--bg-white);
 }
 
 tr:hover {
-  background-color: #ddd;
+  background-color: var(--lightgrey);
 }
 
 th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #000;
-  color: white;
+  background-color: var(--border);
+  color: var(--font-color);
 }
 
 .error-message {
-  color: red;
+  color: var(--error);
   display: none;
 }
 
@@ -89,14 +99,17 @@ th {
   width: 100%;
   display: flex;
   gap: 20px;
+}
+
+#form {
   display: none;
 }
 
 input {
   width: 300px;
   height: 35px;
-  border: 1px solid grey;
-  box-shadow: 0 0 5px grey;
+  border: 1px solid var(--grey);
+  box-shadow: 0 0 5px var(--grey);
 }
 
 .add-button {
@@ -108,30 +121,30 @@ input {
 .add {
   width: 100px;
   padding: 5px;
-  border: 1px solid grey;
-  box-shadow: 0 0 5px grey;
-  background-color: #fff;
-  color: #000;
+  border: 1px solid var(--grey);
+  box-shadow: 0 0 5px var(--grey);
+  background-color: var(--font-color);
+  color: var(--border);
 }
 
 .add:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--border);
+  color: var(--font-color);
   transition: all 0.5s ease-in-out;
 }
 
 .remove {
   width: 100px;
   padding: 10px;
-  border: 1px rgb(184, 14, 14) solid;
-  background-color: #fff;
-  color: rgb(184, 14, 14);
+  border: 1px var(--error) solid;
+  background-color: var(--font-color);
+  color: var(--error);
   border-radius: 10px;
 }
 
 .remove:hover {
-  background-color: rgb(184, 14, 14);
-  color: #fff;
+  background-color: var(--error);
+  color: var(--font-color);
   transition: all 0.5s ease-in-out;
 }
 
@@ -144,11 +157,11 @@ input {
 }
 
 .footer {
-  border: 2px solid #000;
+  border: 2px solid var(--border);
   padding: 3px;
   position: fixed;
   bottom: 0;
-  background-color: #fff;
+  background-color: var(--font-color);
   width: 98%;
   margin: 0 auto;
   margin-bottom: 1rem;
@@ -164,7 +177,6 @@ form {
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  
 }
 
 label {

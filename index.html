@@ -2,84 +2,76 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-  <title>Book Store</title>
-  <link rel="stylesheet" href="./index.css">
-
-  
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Awesome Books</title>
 </head>
 
-<body class="body">
-  <!-- Main Section -->
-  <header >
-    <nav class="header">
-      <div class="logo">
-        Awesome Books
-      </div>
-      <div>
-        <ul class="navbar-list">
-          <li>
-            <button class="navbar-btns btn-list">List</button>
-          </li>
-          <li>
-            <button class="navbar-btns btn-add" id="add-new-btn">Add New</button>
-          </li>
-          <li>
-            <button class="navbar-btns btn-contact">Contact</button>
-          </li>
-        </ul>   
-      </div>
-    </nav>
-    <div class="time-and-date">
+<body>
+    <header>
+        <nav>
+            <h1 id="logo">Awesome Books</h1>
+            <ul>
+                <li id="list">List</li>
+                <li id="newbook">Add new</li>
+                <li id="contact">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div id="time-and-date"></div>
+    <div class="books" id="display">
+        <table>
+            <th>Book</th>
+            <th>Author</th>
+            <th>remove</th>
+            <h3 class="book-list">All awesome books</h3>
+            <tbody class="library">
+            </tbody>
+        </table>
+    </div>
+    <form class="form">
+        <h3>Add a new book</h3>
+        <label for="author">
+            <input class="input-author" type="text" placeholder="Add the Author Name" required>
+        </label>
+        <label for="title">
+            <input class="input-book" type="text" placeholder="Add the book Name" required>
+        </label>
+        <div class="error">
+            <p class="error-message">Please fill in all fields</p>
+        </div>
+        <div class="add-button">
+            <button type="submit" class="add">
+                Add
+            </button>
+        </div>
 
-    </div>
-  </header>
-  <main class="main">
-    <div class="container">
-      <div class="display__books">
-        
-      </div>
-      
-      <!-- form -->
-      <form class="form" id="form">
-        <hr/>
-        <h3>Add New Books</h3>
-        <div class="form-control">
-          <label for="title"></label>
-          <input type="text" id="title" placeholder="Enter Title" required>
-        </div>
-        <div class="form-control">
-          <label for="author"></label>
-          <input type="text" id="author" placeholder="Enter Author" required>
-        </div>
-        <div class="submit-div">
-          <input type="submit" value="Add" class="btn" id="submit-form"></button>
-        </div>
-      </form>
-      <div class="error-message-div">
-        <p class="error-message">Please type in the title and author of the book.</p>
-      </div>
-    <div class="success-message-div">
-        <p class="success-message">Book Added Succesfully</p>
-      </div>
-    <!-- Contact container -->
-    <div class="contact-info">
+    </form>
 
-    </div>
-    </div>
-  </main>
-  <footer class="footer">
-    Copyright  ...
-  </footer>
-  <!-- <script type="module" src="js/index.js"></script> -->
-  
- 
+
+    <!-- Contact Section -->
+    <section class="contact" id="contactPage">
+        <h3 class="contact-header">Contact Information</h3>
+        <div class="contents">
+            <p>Do you have some questions or just want to same "Hello"?
+                <br>You can reach out to us!
+            </p>
+            <ul class="cont-list">
+                <li>Our email mail@mail.com</li>
+                <li>Our phone number +12345678</li>
+                <li>Our address: Streethome,22,City,Country</li>
+            </ul>
+        </div>
+    </section>
+    <section class="page-footer">
+        <div class="footer">
+            <p class="footer-info">Copyright...</p>
+        </div>
+    </section>
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./modules/luxon.js"></script>
 </body>
 
 </html>

@@ -3,7 +3,7 @@
 
 <div align="center">
 
-  <h3 id = "readme-top"><b>Awesome-books README </b></h3>
+  <h3 id = "readme-top"><b>Awesome-books-ES6 README </b></h3>
 
 </div>
 
@@ -33,7 +33,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Awesome-books] <a name="about-project">https://github.com/Amazinggracee/Awesome-books</a>
+# 📖 [Awesome-books] <a name="about-project">https://github.com/Amazinggracee/Awesome-books-ES6</a>
 
 # Awesome-books
 This Awesome books project is based on an online website that allows users to add/remove books and their authors from a list of books or to form a library of books which are stored in a local storage.
@@ -42,7 +42,7 @@ This Awesome books project is based on an online website that allows users to ad
 In this project, we will built a basic website that allows users to add/remove books from a list. We achieved that by using JavaScript objects and arrays. We also dynamically modified the DOM and added basic events.
 
 
-# 📖 [Online link Awesome-books] <a name="about-project">https://github.com/Amazinggracee/Awesome-books</a>
+# 📖 [Online link Awesome-books] <a name="about-project">https://github.com/Amazinggracee/Awesome-books-ES6</a>
 
 In this project:
 - [ ] We understood different ways to create objects in JavaScript.
@@ -52,6 +52,10 @@ In this project:
 - [ ] We understood the concept of single page application.
 - [ ] We used JavaScript to manipulate DOM elements.
 - [ ] We used JavaScript events.
+- [ ] I used ES6 modules to write modular JavaScript.
+- [ ] I learned how to use proper ES6 syntax.
+- [ ] I understood improvements that ES6 brings to JavaScript.
+- [ ] I used npm as software packages system.
 
 # 🛠 Built With <a name="built-with">Technologies</a>
 
@@ -79,10 +83,10 @@ The entire project was built with only HTML5 and JavaScript.
 
 ### Home page
 
-[screenshot for desktop version](./images/pix.png)
-[screenshot for desktop version](./images/Add-page.png)
-[screenshot for desktop version](./images/contact-page.png)
-[screenshot for desktop version](./images/List-page.png)
+[screenshot for desktop version](./images/onload%20screen.png)
+[screenshot for desktop version](./images/list%20screen.png)
+[screenshot for desktop version](./images/Addnew%20screen.png)
+[screenshot for desktop version](./images/Contact.png)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -95,25 +99,27 @@ The entire project was built with only HTML5 and JavaScript.
 - **[key_feature_3]** Make sure that data is preserved in the browser's memory by using localStorage.
 - **[key_feature_4]** Add CSS styles to the application to make it match this wireframe.
 - **[key_feature_5]** Create class methods to add and remove books..
- - **[key_feature_5]** Modify the Awesome books application to have:
+- **[key_feature_6]** Modify the Awesome books application to have:
                             - A Navigation bar.
                             - Three content sections:
                             - Books list.
                             - Add book form.
                             - Contact info..
+- **[key_feature_7]** Create the entry point for your JavaScript code called index.js.
+- **[key_feature_8]** I created a directory called modules.
 </a>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo">https://amazinggracee.github.io/Awesome-books/</a>
-- [Live Demo Link](https://amazinggracee.github.io/Awesome-books/)
+## 🚀 Live Demo <a name="live-demo">https://amazinggracee.github.io/Awesome-books-ES6/</a>
+- [Live Demo Link](https://amazinggracee.github.io/Awesome-books-ES6/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
-## 💻 Getting Started <a name="getting-started">Awesome-books Repository</a>
+## 💻 Getting Started <a name="getting-started">Awesome-books-ES6 Repository</a>
 In order to run this project you need:
 
 - Visual Studio Code.
@@ -129,7 +135,7 @@ Example command:
 ```
  -->
 
-To run this project clone it with `git clone https://github.com/Amazinggracee/Awesome-books.git`
+To run this project clone it with `git clone https://github.com/Amazinggracee/Awesome-books-ES6.git`
 then run from a browser
 
 To get a local copy.
@@ -145,7 +151,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone https://github.com/Amazinggracee/Awesome-books.git
+  git clone https://github.com/Amazinggracee/Awesome-books-ES6.git
 ```
 ### Prerequisites
 
@@ -217,7 +223,7 @@ GitHub Pages
 Example: 
 
 ```sh
-https://amazinggracee.github.io/Awesome-books/
+https://amazinggracee.github.io/Awesome-books-ES6/
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -258,7 +264,7 @@ https://amazinggracee.github.io/Awesome-books/
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Amazinggracee/Awesome-books/issues).
+Feel free to check the [issues page](https://github.com/Amazinggracee/Awesome-books-ES6/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Awesome Books</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 id="logo">Awesome Books</h1>
+            <ul>
+                <li id="list">List</li>
+                <li id="newbook">Add new</li>
+                <li id="contact">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div id="time-and-date"></div>
+    <div class="books" id="display">
+        <table>
+            <th>Book</th>
+            <th>Author</th>
+            <th>remove</th>
+            <h3 class="book-list">All awesome books</h3>
+            <tbody class="library">
+            </tbody>
+        </table>
+    </div>
+    <form class="form" id="form">
+        <h3>Add a new book</h3>
+        <label for="author">
+            <input class="input-author" type="text" placeholder="Add the Author Name" required>
+        </label>
+        <label for="title">
+            <input class="input-book" type="text" placeholder="Add the book Name" required>
+        </label>
+        <div class="error">
+            <p class="error-message">Please fill in all fields</p>
+        </div>
+        <div class="add-button">
+            <button type="submit" class="add">
+                Add
+            </button>
+        </div>
+
+    </form>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contactPage">
+        <h3 class="contact-header">Contact Information</h3>
+        <div class="contents">
+            <p>Do you have some questions or just want to same "Hello"?
+                <br>You can reach out to us!
+            </p>
+            <ul class="cont-list">
+                <li>Our email mail@mail.com</li>
+                <li>Our phone number +12345678</li>
+                <li>Our address: Streethome,22,City,Country</li>
+            </ul>
+        </div>
+    </section>
+    <section class="page-footer">
+        <div class="footer">
+            <p class="footer-info">Copyright...</p>
+        </div>
+    </section>
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./modules/luxon.js"></script>
+</body>
+
+</html>
